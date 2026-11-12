@@ -2,7 +2,7 @@ import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
-const outputDir = process.env.MAKEFUN_OUTPUT_DIR || 'out';
+const outputDir = process.env.MAKEFUN_OUTPUT_DIR || '/output';
 mkdirSync(outputDir, { recursive: true });
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
